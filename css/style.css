@@ -133,7 +133,6 @@
     align-self: center;
     transform: translateY(-50px);
     margin: 0 auto;
-    overflow: hidden;
     padding-bottom: 10px;
   }
   section .title span:first-child {
@@ -272,22 +271,16 @@
     padding: 15px;
     color: gray;
     background-color: rgba(255,255,255, 0.1);
-    margin: 10px auto;
     font-weight: lighter;
     font-size: 1rem;
-  }
-  section#contractTab .title form input:first-of-type {
-    width: 46%;
-    display: inline;
-  }
-  section#contractTab .title form input:nth-of-type(2) {
-    width: 46%;
-    display: inline;
+    width: 50%;
+    display: block;
+    margin: 15px 0px;
   }
   section#contractTab .title form input:last-of-type {
-    width: 100%;
     color: white;
     transition: 0.4s;
+    width: 25%;
   }
   section#contractTab .title form input:last-of-type:hover {
     background-color: white;
@@ -295,13 +288,13 @@
     cursor: pointer;
   }
   form textarea {
-    min-width: 96%;
-    height: 25vh;
+    width: 50%;
+    height: 200px;
     border: 1px solid white;
     padding: 15px;
     color: gray;
     background-color: rgba(255,255,255, 0.1);
-    margin: 10px auto;
+    margin: 0px auto;
     font-weight: lighter;
     font-size: 1rem;
   }

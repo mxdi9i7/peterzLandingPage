@@ -12,7 +12,7 @@
         <li id="homeLink"><a href="#">Home</a></li>
         <li id="aboutLink"><a id="aboutLink" href="#">About Peter</a></li>
         <li id="portLink"><a href="#portfolio">Portfolio</a></li>
-        <li id="workLink"><a href="#work">Track Record</a></li>
+        <li id="workLink"><a href="#work">Project</a></li>
         <li id="contractLink"><a href="#contact">Contact</a></li>
         <li class="slide"></li>
       </ul>
@@ -53,18 +53,18 @@
     </section>
     <section id="workTab">
       <div class="title">
-        <span>Track Record</span>
-
+        <span>Current Project</span>
+        <span class="aboutSpan">Coming soon.</span>
       </div>
     </section>
     <section id="contractTab">
       <div class="title">
-        <span>Contact Me</span>
+        <span>Contact</span>
         <span class="aboutSpan">If you have a contract, question, offer or just a greeting, you can reach me via this contact form or email me at <a>peter.zheng88228@gmail.com</a></span>
-        <form>
-          <input type="text" placeholder="Enter name here">
-          <input type="email" placeholder="Enter email here">
-          <textarea placeholder="Enter message here"></textarea>
+        <form action="contact.php" method="POST">
+          <input type="text" placeholder="Enter name here" name="name">
+          <input type="email" placeholder="Enter email here" name="email">
+          <textarea placeholder="Enter message here" name="message"></textarea>
           <input type="submit" placeholder="Submit">
         </form>
       </div>
