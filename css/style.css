@@ -148,7 +148,7 @@
     letter-spacing: 0.25vw;
   }
   section .title span {
-    font-size: 1em;
+    font-size: 1rem;
     animation: byBottom 1s 0.25s ease both;
     display: inline-block;
     color: #efefef;
@@ -158,7 +158,7 @@
     letter-spacing: 0.25vw;
   }
   section .title span.aboutSpan {
-    font-size: 1em;
+    font-size: 1rem;
     animation: byBottom 1s 0.25s ease both;
     display: inline-block;
     color: #efefef;
@@ -185,6 +185,128 @@
     width: 0;
     animation: linkAfter 0.5s 1s ease both;
   }
+  section .title span.aboutSpan a {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #f7ca18;
+    cursor: pointer;
+  }
+  section .title span.aboutSpan a::after {
+    content: "";
+    height: 2px;
+    background-color: #f7ca18;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    animation: linkAfter 0.5s 1s ease both;
+  }
+  section .title p {
+    font-size: 1rem;
+    animation: byBottom 1s 0.25s ease both;
+    display: inline-block;
+    color: #efefef;
+    width: 100%;
+    transform: translateX(-100%);
+    font-weight: 600;
+    letter-spacing: 0.25vw;
+  }
+  section#portTab .title a {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    min-width: 250px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    color: #f7ca18;
+    font-weight: 600;
+    transition: 0.4s;
+    animation: byBottom 0.8s 0.4s ease both;
+  }
+  section#portTab .title a::after {
+    content: "";
+    height: 2px;
+    background-color: #f7ca18;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    animation: linkAfter 0.5s 1s ease both;
+    transition: 0.4s;
+  }
+  section#contractTab .title a {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    min-width: 250px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    color: #f7ca18;
+    font-weight: 600;
+    transition: 0.4s;
+    animation: byBottom 0.8s 0.4s ease both;
+  }
+  section#contractTab .title a::after {
+    content: "";
+    height: 5px;
+    background-color: #f7ca18;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    animation: linkAfter 0.5s 1s ease both;
+    transition: 0.4s;
+  }
+  section#portTab .title a:hover {
+    color: #fff;
+  }
+  section#contractTab .title form {
+    width: 100%;
+    animation: byBottom 0.8s 0.4s ease both;
+  }
+  section#contractTab .title form input {
+    max-width: 1800px;
+    border: 1px solid white;
+    padding: 15px;
+    color: gray;
+    background-color: rgba(255,255,255, 0.1);
+    margin: 10px auto;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  section#contractTab .title form input:first-of-type {
+    width: 46%;
+    display: inline;
+  }
+  section#contractTab .title form input:nth-of-type(2) {
+    width: 46%;
+    display: inline;
+  }
+  section#contractTab .title form input:last-of-type {
+    width: 100%;
+    color: white;
+    transition: 0.4s;
+  }
+  section#contractTab .title form input:last-of-type:hover {
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+  form textarea {
+    min-width: 96%;
+    height: 25vh;
+    border: 1px solid white;
+    padding: 15px;
+    color: gray;
+    background-color: rgba(255,255,255, 0.1);
+    margin: 10px auto;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+
+
   @-moz-keyframes pop {
     0% {
       transform: translateY(100%);
