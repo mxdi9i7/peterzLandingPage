@@ -3,7 +3,7 @@ $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 
-$mail_to = 'peter.zheng88228@gmail.com';
+$mail_to = '443527350@qq.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
